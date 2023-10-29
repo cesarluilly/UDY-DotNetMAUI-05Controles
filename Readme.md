@@ -174,7 +174,7 @@
 </ScrollView>
 ```
 
-# Proyecto 2 - Controles que inician comandos
+# Video 28  Controles que inician comandos
 
 * `<Button/>`
     * Con `DisplayAlert("Test", "This is a demo", "Ok");` desplegamos una alerta.
@@ -261,4 +261,69 @@ Codigo C#
     {
         DisplayAlert("SwipeView", $"Element Tapped", "Ok");
     }
+```
+
+# Video 29 Controles para establecer valores
+
+* `<CheckBox/>`
+* `<Slider/>`
+* `<Stepper/>`
+* `<Switch/>`
+* `<DatePicker/>`
+* `<TimePicker/>`
+
+![1698614162798](image/Readme/1698614162798.png)
+
+![1698614177922](image/Readme/1698614177922.png)
+
+XAML
+```xaml
+<VerticalStackLayout>
+    <!--*********************************************-->
+    <CheckBox IsChecked="True"/>
+
+    <!--*********************************************-->
+    <Slider x:Name="slider"
+            Minimum="0"
+            Maximum="10"
+            MinimumTrackColor="Yellow"
+            MaximumTrackColor="Green"
+            ThumbColor="DarkRed"
+                ValueChanged="slider_ValueChanged"/>
+
+    <Label x:Name="lblSlider"/>
+    
+    <!--*********************************************-->
+    <Stepper x:Name="stepper"
+             ValueChanged="stepper_ValueChanged"
+             Maximum="10"
+             Minimum="2"
+             Increment="2"/>
+    
+    <!--*********************************************-->
+    <Switch IsToggled="True"/>
+
+    <!--*********************************************-->
+    <DatePicker/>
+    <TimePicker/>
+    
+</VerticalStackLayout>
+```
+
+Codigo C#
+```c#
+private void slider_ValueChanged(object sender, ValueChangedEventArgs e)
+{
+	lblSlider.Text = slider.Value.ToString();
+}
+
+private void stepper_ValueChanged(object sender, ValueChangedEventArgs e)
+{
+    if (
+        stepper != null
+        )
+    {
+        lblSlider.Text = stepper.Value.ToString();
+    }
+}
 ```

@@ -9,7 +9,8 @@ namespace ControlsDemo
             InitializeComponent();
 
             //MainPage = new PresentationControlsDemo();
-            MainPage = new CommandsControlsDemo();
+            //MainPage = new CommandsControlsDemo();
+            MainPage = new InputControlsDemo();
         }
     }
 }
