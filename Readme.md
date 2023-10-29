@@ -327,3 +327,42 @@ private void stepper_ValueChanged(object sender, ValueChangedEventArgs e)
     }
 }
 ```
+
+# Video 30 Controles de edicion de texto
+
+* `<Entry/>`
+* `<Editor/>`
+
+![1698615521961](image/Readme/1698615521961.png)
+
+Etiquetado XAML
+```xaml
+<VerticalStackLayout>
+    <!--*********************************************-->
+    <Entry 
+           x:Name="txtName"
+           Placeholder="Name"
+           PlaceholderColor="DarkGreen"
+           IsPassword="True"
+           Keyboard="Telephone"
+           TextChanged="Entry_TextChanged"
+           Completed="Entry_Completed"/>
+
+    <!--*********************************************-->
+    <Editor AutoSize="TextChanges"/>
+    
+</VerticalStackLayout>
+```
+
+Codigo C#
+```c#
+private void Entry_TextChanged(object sender, TextChangedEventArgs e)
+{
+    Debug.WriteLine(txtName.Text);
+}
+
+private void Entry_Completed(object sender, EventArgs e)
+{
+    DisplayAlert("Test", "Se ah completado", "Ok");
+}
+```

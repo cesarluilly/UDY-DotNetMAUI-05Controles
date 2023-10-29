@@ -10,7 +10,8 @@ namespace ControlsDemo
 
             //MainPage = new PresentationControlsDemo();
             //MainPage = new CommandsControlsDemo();
-            MainPage = new InputControlsDemo();
+            //MainPage = new InputControlsDemo();
+            MainPage = new TextControlsDemo();
         }
     }
 }
