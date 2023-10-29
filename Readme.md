@@ -366,3 +366,21 @@ private void Entry_Completed(object sender, EventArgs e)
     DisplayAlert("Test", "Se ah completado", "Ok");
 }
 ```
+
+# Video 31 Controles para indicar actividad
+
+* `<ActivityIndicator/>`
+* `<ProgressBar/>`
+
+![1698620115950](image/Readme/1698620115950.png)
+
+```xaml
+<VerticalStackLayout>
+    <!--*********************************************-->
+    <ActivityIndicator IsRunning="True" Color="Blue"/>
+
+    <!--*********************************************-->
+    <ProgressBar Progress=".8"/>
+
+</VerticalStackLayout>
+```
