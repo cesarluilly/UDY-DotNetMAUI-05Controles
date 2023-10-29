@@ -8,7 +8,8 @@ namespace ControlsDemo
         {
             InitializeComponent();
 
-            MainPage = new PresentationControlsDemo();
+            //MainPage = new PresentationControlsDemo();
+            MainPage = new CommandsControlsDemo();
         }
     }
 }
