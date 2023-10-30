@@ -41,6 +41,9 @@
     <MauiXaml Update="Pages\CommandsControlsDemo.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Pages\Init.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Pages\InputControlsDemo.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

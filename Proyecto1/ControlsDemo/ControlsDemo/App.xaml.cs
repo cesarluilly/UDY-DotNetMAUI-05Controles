@@ -17,7 +17,12 @@ namespace ControlsDemo
             //MainPage = new CollectionsControlsDemo2ListView();
             //MainPage = new CollectionsControlsDemo3CollectionView();
             //MainPage = new CollectionsControlsDemo4Picker();
-            MainPage = new CollectionsControlsDemo5TableView();
+            //MainPage = new CollectionsControlsDemo5TableView();
+
+            //                                              //Pagina de tipo ContentPage utilizando Navegacion.
+            var navPage = new NavigationPage(new Init());
+            navPage.BarBackground = Colors.CadetBlue;
+            MainPage = navPage;
         }
     }
 }

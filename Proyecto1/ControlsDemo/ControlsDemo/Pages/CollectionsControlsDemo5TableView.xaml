@@ -21,7 +21,6 @@
                ImageSource="dotnet_bot.svg"
                Text="ImageCell Text"/>
             </TableSection>
-
         </TableRoot>
     </TableView>
 </ContentPage>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlsDemo.Pages.Init"
+             Title="Init">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+        
+        <Button Text="Presentation Controls"
+                BackgroundColor="LightGreen"
+                Margin="2"
+                Clicked="btnPresentation_Clicked"/>
+
+        <Button Text="Commands Control"
+                BackgroundColor="Magenta"
+                Margin="2"
+                Clicked="btnCommands_Clicked"/>
+
+        <Button Text="Input"
+                BackgroundColor="LightGreen"
+                Margin="2"
+                Clicked="btnInput_Clicked"/>
+
+        <Button Text="Text"
+                BackgroundColor="Magenta"
+                Margin="2"
+                Clicked="btnText_Clicked"/>
+
+        <Button Text="Activity"
+                BackgroundColor="LightGreen"
+                Margin="2"
+                Clicked="btnActivity_Clicked"/>
+
+        <Button Text="Collection1 Carousel"
+                BackgroundColor="Magenta"
+                Margin="2"
+                Clicked="btnCollectionCarousel_Clicked"/>
+
+        <Button Text="Collection2 ListView"
+                BackgroundColor="LightGreen"
+                Margin="2"
+                Clicked="btnCollectionListView_Clicked"/>
+
+        <Button Text="Collection3 View"
+                BackgroundColor="Magenta"
+                Margin="2"
+                Clicked="btnCollectionView_Clicked"/>
+
+        <Button Text="Collection4 Picker"
+                BackgroundColor="LightGreen"
+                Margin="2"
+                Clicked="btnCollectionPicker_Clicked"/>
+
+        <Button Text="Collection5 Table View"
+                BackgroundColor="Magenta"
+                Margin="2"
+                Clicked="btnCollectionTableView_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>
