@@ -34,6 +34,36 @@ build_metadata.AdditionalFiles.ManifestResourceName = ControlsDemo.Pages.Activit
 build_metadata.AdditionalFiles.TargetPath = Pages\ActivityControlsDemo.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\ActivityControlsDemo.xaml
 
+[C:/Users/Cesar Garcia/source/reposMaui/Seccion5Controles/Proyecto1/ControlsDemo/ControlsDemo/Pages/CollectionsControlsDemo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ControlsDemo.Pages.CollectionsControlsDemo.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\CollectionsControlsDemo.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\CollectionsControlsDemo.xaml
+
+[C:/Users/Cesar Garcia/source/reposMaui/Seccion5Controles/Proyecto1/ControlsDemo/ControlsDemo/Pages/CollectionsControlsDemo2ListView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ControlsDemo.Pages.CollectionsControlsDemo2ListView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\CollectionsControlsDemo2ListView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\CollectionsControlsDemo2ListView.xaml
+
+[C:/Users/Cesar Garcia/source/reposMaui/Seccion5Controles/Proyecto1/ControlsDemo/ControlsDemo/Pages/CollectionsControlsDemo3CollectionView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ControlsDemo.Pages.CollectionsControlsDemo3CollectionView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\CollectionsControlsDemo3CollectionView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\CollectionsControlsDemo3CollectionView.xaml
+
+[C:/Users/Cesar Garcia/source/reposMaui/Seccion5Controles/Proyecto1/ControlsDemo/ControlsDemo/Pages/CollectionsControlsDemo4Picker.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ControlsDemo.Pages.CollectionsControlsDemo4Picker.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\CollectionsControlsDemo4Picker.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\CollectionsControlsDemo4Picker.xaml
+
+[C:/Users/Cesar Garcia/source/reposMaui/Seccion5Controles/Proyecto1/ControlsDemo/ControlsDemo/Pages/CollectionsControlsDemo5TableView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ControlsDemo.Pages.CollectionsControlsDemo5TableView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\CollectionsControlsDemo5TableView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\CollectionsControlsDemo5TableView.xaml
+
 [C:/Users/Cesar Garcia/source/reposMaui/Seccion5Controles/Proyecto1/ControlsDemo/ControlsDemo/Pages/CommandsControlsDemo.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ControlsDemo.Pages.CommandsControlsDemo.xaml

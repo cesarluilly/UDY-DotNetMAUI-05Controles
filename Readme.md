@@ -384,3 +384,219 @@ private void Entry_Completed(object sender, EventArgs e)
 
 </VerticalStackLayout>
 ```
+
+# Video 32 Controles para desplegar colecciones
+
+## Forma 1 Carousel
+
+* `<CarouselView> </CarouselView>`
+    * `<CarouselView.ItemsSource> </CarouselView.ItemsSource>`
+        * `<x:Array Type="{x:Type x:String}">`
+    * `<CarouselView.ItemTemplate> </CarouselView.ItemTemplate>`
+        * `<DataTemplate> </DataTemplate>`
+
+![1698622338567](image/Readme/1698622338567.png)
+
+```xaml
+<VerticalStackLayout>
+    <!--*********************************************-->
+    <CarouselView IndicatorView="indicatorView">
+        <CarouselView.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+                <x:String>mono</x:String>
+                <x:String>monodroid</x:String>
+                <x:String>monotouch</x:String>
+                <x:String>monorail</x:String>
+                <x:String>monodevelop</x:String>
+                <x:String>monotone</x:String>
+                <x:String>monopoly</x:String>
+                <x:String>monomodal</x:String>
+                <x:String>mononucleosis</x:String>
+            </x:Array>
+        </CarouselView.ItemsSource>
+        <CarouselView.ItemTemplate>
+            <DataTemplate>
+                <StackLayout>
+                    <Frame Margin="20"
+                           BorderColor="DarkGray"
+                           CornerRadius="5"
+                           HasShadow="True"
+                           HeightRequest="100"
+                           HorizontalOptions="Center"
+                           VerticalOptions="CenterAndExpand"
+                           >
+                        <Label Text="{Binding .}"/>
+                    </Frame>
+                </StackLayout>
+            </DataTemplate>
+        </CarouselView.ItemTemplate>
+    </CarouselView>
+
+    <IndicatorView 
+        x:Name="indicatorView"
+        HorizontalOptions="Center"
+        IndicatorColor="LightGray"
+        SelectedIndicatorColor="DarkGray"/>
+</VerticalStackLayout>
+```    
+
+## Forma 2 ListView
+
+* `<ListView HasUnevenRows="True">`
+    * `<ListView.ItemsSource>`
+        * `<x:Array Type="{x:Type x:String}">`
+    * `<ListView.ItemTemplate>`
+        * `<DataTemplate>`
+            * `<ViewCell>`
+                * `<StackLayout>`
+                    * `<Frame/>`
+
+```xaml
+<ListView HasUnevenRows="True">
+    <ListView.ItemsSource>
+        <x:Array Type="{x:Type x:String}">
+            <x:String>mono</x:String>
+            <x:String>monodroid</x:String>
+            <x:String>monotouch</x:String>
+            <x:String>monorail</x:String>
+            <x:String>monodevelop</x:String>
+            <x:String>monotone</x:String>
+            <x:String>monopoly</x:String>
+            <x:String>monomodal</x:String>
+            <x:String>mononucleosis</x:String>
+        </x:Array>
+    </ListView.ItemsSource>
+
+    <ListView.ItemTemplate>
+        <DataTemplate>
+            <ViewCell>
+                <StackLayout>
+                    <Frame Margin="20"
+                           BorderColor="DarkGray"
+                           CornerRadius="5"
+                           HasShadow="True"
+                           HeightRequest="100"
+                           HorizontalOptions="Center"
+                           VerticalOptions="CenterAndExpand"
+                           >
+                        <Label Text="{Binding .}"/>
+                    </Frame>
+                </StackLayout>
+            </ViewCell>
+        </DataTemplate>
+    </ListView.ItemTemplate>
+</ListView>
+```
+
+![1698623156025](image/Readme/1698623156025.png)
+
+## Forma 3 CollectionView
+**La ventaja que tenemos de CollectionView a comparacion del ListView, 
+es que en el CollectionView podemos definir filas y columnas**
+
+* `<CollectionView SelectionMode="Multiple">`
+    * `<CollectionView.ItemsSource>`
+        * `<x:Array Type="{x:Type x:String}">`
+    * `<CollectionView.ItemTemplate>`
+        * `<DataTemplate>`
+            * `<StackLayout>`
+                * `<Frame Margin="20"`
+```xaml
+<CollectionView SelectionMode="Multiple">
+    <CollectionView.ItemsSource>
+        <x:Array Type="{x:Type x:String}">
+            <x:String>mono</x:String>
+            <x:String>monodroid</x:String>
+            <x:String>monotouch</x:String>
+            <x:String>monorail</x:String>
+            <x:String>monodevelop</x:String>
+            <x:String>monotone</x:String>
+            <x:String>monopoly</x:String>
+            <x:String>monomodal</x:String>
+            <x:String>mononucleosis</x:String>
+        </x:Array>
+    </CollectionView.ItemsSource>
+
+    <CollectionView.ItemTemplate>
+        <DataTemplate>
+            <StackLayout>
+                <Frame Margin="20"
+                        BorderColor="DarkGray"
+                        CornerRadius="5"
+                        HasShadow="True"
+                        HeightRequest="100"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        >
+                    <Label Text="{Binding .}"/>
+                </Frame>
+            </StackLayout>
+        </DataTemplate>
+    </CollectionView.ItemTemplate>
+</CollectionView>
+```
+
+![1698623993177](image/Readme/1698623993177.png)
+
+## Forma 4 Picker
+
+* `<Picker VerticalOptions="Center">`
+    * `<Picker.ItemsSource>`
+        * `<x:Array Type="{x:Type x:String}">`
+
+Xaml
+```xaml
+<Picker VerticalOptions="Center">
+    <Picker.ItemsSource>
+        <x:Array Type="{x:Type x:String}">
+            <x:String>mono</x:String>
+            <x:String>monodroid</x:String>
+            <x:String>monotouch</x:String>
+            <x:String>monorail</x:String>
+            <x:String>monodevelop</x:String>
+            <x:String>monotone</x:String>
+            <x:String>monopoly</x:String>
+            <x:String>monomodal</x:String>
+            <x:String>mononucleosis</x:String>
+        </x:Array>
+    </Picker.ItemsSource>
+</Picker>
+```
+
+![1698626793010](image/Readme/1698626793010.png)
+
+## Forma 5 TableView
+
+* `<TableView Intent="Settings">`
+    * `<TableRoot>`
+        * `<TableSection Title="First Section">`
+            * `<TextCell Detail="TextCell Detail" Text="TextCell"/>`
+            * `<EntryCell Label="Entry Label" Text="EntryCell Text"/>`
+            * `<SwitchCell Text="SwitchCell Text"/>`
+            * `<ImageCell/>`
+
+XAML
+```xaml
+<TableView Intent="Settings">
+    <TableRoot>
+        <TableSection Title="First Section">
+            <TextCell Detail="TextCell Detail" Text="TextCell"/>
+            <EntryCell Label="Entry Label" Text="EntryCell Text"/>
+            <SwitchCell Text="SwitchCell Text"/>
+            <ImageCell Detail="ImageCell Detail"
+                       ImageSource="dotnet_bot.svg"
+                       Text="ImageCell Text"/>
+        </TableSection>
+        <TableSection Title="Second Section">
+            <TextCell Detail="TextCell Detail" Text="TextCell"/>
+            <EntryCell Label="Entry Label" Text="EntryCell Text"/>
+            <SwitchCell Text="SwitchCell Text"/>
+            <ImageCell Detail="ImageCell Detail"
+           ImageSource="dotnet_bot.svg"
+           Text="ImageCell Text"/>
+        </TableSection>
+
+    </TableRoot>
+</TableView>
+```
+![1698627807843](image/Readme/1698627807843.png)

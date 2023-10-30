@@ -12,7 +12,12 @@ namespace ControlsDemo
             //MainPage = new CommandsControlsDemo();
             //MainPage = new InputControlsDemo();
             //MainPage = new TextControlsDemo();
-            MainPage = new ActivityControlsDemo();
+            //MainPage = new ActivityControlsDemo();
+            //MainPage = new CollectionsControlsDemo();
+            //MainPage = new CollectionsControlsDemo2ListView();
+            //MainPage = new CollectionsControlsDemo3CollectionView();
+            //MainPage = new CollectionsControlsDemo4Picker();
+            MainPage = new CollectionsControlsDemo5TableView();
         }
     }
 }

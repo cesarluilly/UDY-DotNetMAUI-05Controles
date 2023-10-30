@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlsDemo.Pages.CollectionsControlsDemo5TableView"
+             Title="CollectionsControlsDemo5TableView">
+    <TableView Intent="Settings">
+        <TableRoot>
+            <TableSection Title="First Section">
+                <TextCell Detail="TextCell Detail" Text="TextCell"/>
+                <EntryCell Label="Entry Label" Text="EntryCell Text"/>
+                <SwitchCell Text="SwitchCell Text"/>
+                <ImageCell Detail="ImageCell Detail"
+                           ImageSource="dotnet_bot.svg"
+                           Text="ImageCell Text"/>
+            </TableSection>
+            <TableSection Title="Second Section">
+                <TextCell Detail="TextCell Detail" Text="TextCell"/>
+                <EntryCell Label="Entry Label" Text="EntryCell Text"/>
+                <SwitchCell Text="SwitchCell Text"/>
+                <ImageCell Detail="ImageCell Detail"
+               ImageSource="dotnet_bot.svg"
+               Text="ImageCell Text"/>
+            </TableSection>
+
+        </TableRoot>
+    </TableView>
+</ContentPage>
