@@ -55,7 +55,7 @@
 * ``<WebView/>`` Nos va a permitir colocar una URL para mostrar un sitio web
   ![1698588207969](image/Readme/1698588207969.png)
 
-```xaml
+```xml
 <!--************************************************-->
 <ScrollView>
     <VerticalStackLayout>
@@ -185,7 +185,7 @@
 
 ![1698612222932](image/Readme/1698612222932.png)
 
-```xaml
+```xml
 <VerticalStackLayout>
     <!--************************************************-->
     <Button x:Name="btnTest" 
@@ -277,7 +277,7 @@ Codigo C#
 ![1698614177922](image/Readme/1698614177922.png)
 
 XAML
-```xaml
+```xml
 <VerticalStackLayout>
     <!--*********************************************-->
     <CheckBox IsChecked="True"/>
@@ -336,7 +336,7 @@ private void stepper_ValueChanged(object sender, ValueChangedEventArgs e)
 ![1698615521961](image/Readme/1698615521961.png)
 
 Etiquetado XAML
-```xaml
+```xml
 <VerticalStackLayout>
     <!--*********************************************-->
     <Entry 
@@ -397,7 +397,7 @@ private void Entry_Completed(object sender, EventArgs e)
 
 ![1698622338567](image/Readme/1698622338567.png)
 
-```xaml
+```xml
 <VerticalStackLayout>
     <!--*********************************************-->
     <CarouselView IndicatorView="indicatorView">
@@ -451,7 +451,7 @@ private void Entry_Completed(object sender, EventArgs e)
                 * `<StackLayout>`
                     * `<Frame/>`
 
-```xaml
+```xml
 <ListView HasUnevenRows="True">
     <ListView.ItemsSource>
         <x:Array Type="{x:Type x:String}">
@@ -501,7 +501,7 @@ es que en el CollectionView podemos definir filas y columnas**
         * `<DataTemplate>`
             * `<StackLayout>`
                 * `<Frame Margin="20"`
-```xaml
+```xml
 <CollectionView SelectionMode="Multiple">
     <CollectionView.ItemsSource>
         <x:Array Type="{x:Type x:String}">
@@ -545,7 +545,7 @@ es que en el CollectionView podemos definir filas y columnas**
         * `<x:Array Type="{x:Type x:String}">`
 
 Xaml
-```xaml
+```xml
 <Picker VerticalOptions="Center">
     <Picker.ItemsSource>
         <x:Array Type="{x:Type x:String}">
@@ -576,7 +576,7 @@ Xaml
             * `<ImageCell/>`
 
 XAML
-```xaml
+```xml
 <TableView Intent="Settings">
     <TableRoot>
         <TableSection Title="First Section">
